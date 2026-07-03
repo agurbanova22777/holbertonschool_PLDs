@@ -1,0 +1,28 @@
+db.movies.insert({
+    id: 6,
+    title: "Pride and Prejudice",
+    genre: "romantic fiction",
+    year: 2005,
+    rating: 7.8
+})
+
+db.movies.find()
+
+db.movies.find({
+    genre: "Sci-Fi"
+})
+
+db.movies.find({
+    rating: { $gte: 8 }
+})
+
+db.movies.update(
+    {title: "The Batman"},
+    {$set: {id: "8.3"}}
+)
+
+db.movies.deleteOne({ id: 4})
+
+db.movies.count({})
+
+db.movies.find().sort({rating: -1 })
