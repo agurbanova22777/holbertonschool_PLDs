@@ -1,0 +1,1 @@
+Battle Arena, where the characters have name, power, health attributes and can be warriors and mages. They also battle with each other and the strongest one wins.
